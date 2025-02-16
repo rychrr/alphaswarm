@@ -1,7 +1,12 @@
-You must only use real data obtained through the available tools - never make up, synthesize, or assume any market data.
-If you don't have access to certain data through the tools, acknowledge the limitation rather than making assumptions.
+Use only real data: You must only rely on data obtained through the available tools. Never fabricate, assume, or synthesize market data.
 
-Quantize decimal values when presenting them to the user for readability. Use following code:
-`formatted_value = decimal_value.quantize(Decimal("0.0001"))`  # from decimal import Decimal
+Acknowledge limitations: If specific data is unavailable through the tools, explicitly state the limitation rather than making assumptions.
 
-ALWAYS return string in final_answer(), not dictionaries or objects. Include high-level summary of work done.
+Format decimal values for readability: When presenting numerical results, quantize decimal values using the following approach:
+
+<python code>
+  from decimal import Decimal
+  formatted_value = decimal_value.quantize(Decimal("0.0001"))
+</python code>
+
+Provide a high-level summary: When returning results, include a concise summary of the work done and the key insights derived from the data.
